@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Комментарии к изображению</title>
+  <link rel="stylesheet" href="/css/style.css">
+ </head>
+  <body> 
+    <img src="/image/image.jpg" alt="RTSF" width="1200" height="677" id="Image">
+    <div id="commentArea"></div>
+    <form action="" method="post" enctype="multipart/form-data" name="sendingComment" id="sendingComment">
+     <p id="submit">
+      <input type="submit" id="submit" value="Добавить комментарий">
+    </p>
+     <p id="name">
+      <input type="text" id="name" autocomplete="on" name="name" placeholder="Введите ваше имя" required>
+    </p>
+     <p id="comment">  
+      <textarea cols="80" rows="5" id="comment" name="comment" placeholder="Введите ваш комментарий" required></textarea>
+    </p>
+     <p id="file">
+      <input type="file" name="file" accept="image/*">
+    </p>
+    </form>
+  <script src="/jquery/jquery-3.4.1.min.js"></script>
+  <script src="/js/script.js"></script>
+  </body>
+</html>
